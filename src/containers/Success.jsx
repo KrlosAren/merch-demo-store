@@ -5,7 +5,6 @@ import useGoogleAddress from '../hooks/useGoogleAddress';
 import '../styles/components/Success.css';
 
 const Success = () => {
-
   return (
     <div className='Success'>
       <div className='Success-content'>
