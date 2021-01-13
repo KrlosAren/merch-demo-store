@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/index.js',
@@ -42,6 +43,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new Dotenv({
+      path: path.join(__dirname, '.env'),
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',

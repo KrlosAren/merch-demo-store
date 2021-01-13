@@ -13,12 +13,12 @@ import handleSumTotal from '../utils';
 import '../styles/components/Payment.css';
 
 const Payment = ({ history }) => {
-
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
 
   const paypalOptions = {
-    clientId: 'AfyxHsktmXhEGCR1Zxu87KemE8DNfmp8ocZIixEu-g0_sZbXcRBjbq8H-vNvbjz4TST9m2tJAc62Es9Z',
+    clientId:
+      'AfyxHsktmXhEGCR1Zxu87KemE8DNfmp8ocZIixEu-g0_sZbXcRBjbq8H-vNvbjz4TST9m2tJAc62Es9Z',
     intent: 'capture',
     currency: 'USD',
   };
