@@ -19,7 +19,6 @@ import AppProvider from '../context/AppContext';
 import useInitialState from '../hooks/useInitialState';
 
 function App() {
-
   return (
     <AppProvider>
       <BrowserRouter>
