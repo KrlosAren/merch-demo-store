@@ -12,7 +12,7 @@ const Map = ({ data }) => {
   };
 
   return (
-    <LoadScript googleMapsApiKey='AIzaSyBKkOtjkXwmWXgPBcRSnaqhJtB4BYgFXbk'>
+    <LoadScript googleMapsApiKey=''>
       <GoogleMap mapContainerStyle={mapStyles} zoom={9} center={defaultCenter}>
         <Marker position={defaultCenter} />
       </GoogleMap>
